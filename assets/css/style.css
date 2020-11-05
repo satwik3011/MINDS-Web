@@ -1016,10 +1016,12 @@ section {
 
 .testimonials {
     padding: 80px 0;
+    padding-bottom: 10px;
     background: url("../img/testimonials-bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    color: white;
 }
 
 .testimonials::before {
@@ -1043,6 +1045,8 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
     width: 100px;
+    height: 100px;
+    background-color: white;
     border-radius: 50%;
     border: 6px solid rgba(255, 255, 255, 0.15);
     margin: 0 auto;
@@ -1240,7 +1244,8 @@ section {
     position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+
+/* .portfolio-details .portfolio-details-carousel {
     position: relative;
     z-index: 1;
 }
@@ -1262,7 +1267,7 @@ section {
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
     background-color: #106eea !important;
-}
+} */
 
 .portfolio-details .portfolio-info {
     padding: 30px;
