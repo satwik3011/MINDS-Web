@@ -7,7 +7,10 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  ini_set("mail.log", "/tmp/mail.log");
+  ini_set("mail.add_x_header", TRUE)
+
+  $receiving_email_address = 'satwikdudeja@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -37,5 +40,6 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
+  if(mail($to, $subject, $))
   echo $contact->send();
 ?>
