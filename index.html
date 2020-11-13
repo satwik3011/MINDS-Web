@@ -784,6 +784,67 @@
 
             </div>
 
+            <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <form id="my_form" method="POST" data-netlify="true" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="col form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" id="message"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+                        </div>
+                    </form>
+
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                            <label>Your Name: <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <label>Your Role: <select name="role[]" multiple>
+                            <option value="leader">Leader</option>
+                            <option value="follower">Follower</option>
+                          </select></label>
+                        </p>
+                        <p>
+                            <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+                    <!-- <form id="my_form" onsubmit="submitForm(); return false;">
+                        <p><input id="n" placeholder="Name" required></p>
+                        <p><input id="e" placeholder="Email Address" type="email" required></p>
+                        <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+                        <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+                    </form> -->
+                </div>
+
+            </div>
+
         </div>
     </section>
     <!-- End Contact Section -->
